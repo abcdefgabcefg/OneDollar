@@ -22,7 +22,8 @@ namespace OneDollar.DAL
                 map.Properties(p => new
                 {
                     p.ID,
-                    p.Title
+                    p.Title,
+                    p.Description
                 });
                 map.ToTable("CinemaProducts");
             })
@@ -30,7 +31,6 @@ namespace OneDollar.DAL
             {
                 map.Properties(p => new
                 {
-                    p.Description,
                     p.Duration,
                     p.Year,
                     p.IMDB,

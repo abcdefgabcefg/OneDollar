@@ -181,27 +181,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201902211947597_FixedMainRolesAndProducers.cs" />
-    <Compile Include="Migrations\201902211947597_FixedMainRolesAndProducers.Designer.cs">
-      <DependentUpon>201902211947597_FixedMainRolesAndProducers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902212028388_DividedCinemaProductsEntity.cs" />
-    <Compile Include="Migrations\201902212028388_DividedCinemaProductsEntity.Designer.cs">
-      <DependentUpon>201902212028388_DividedCinemaProductsEntity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902212039367_FixedNavigationsProperties.cs" />
-    <Compile Include="Migrations\201902212039367_FixedNavigationsProperties.Designer.cs">
-      <DependentUpon>201902212039367_FixedNavigationsProperties.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902212130022_AddedFilmEntity.cs" />
-    <Compile Include="Migrations\201902212130022_AddedFilmEntity.Designer.cs">
-      <DependentUpon>201902212130022_AddedFilmEntity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902212201509_AddedTVShowEntity.cs" />
-    <Compile Include="Migrations\201902212201509_AddedTVShowEntity.Designer.cs">
-      <DependentUpon>201902212201509_AddedTVShowEntity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CinemaProduct.cs" />
     <Compile Include="Models\Film.cs" />
@@ -288,23 +267,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902211947597_FixedMainRolesAndProducers.resx">
-      <DependentUpon>201902211947597_FixedMainRolesAndProducers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902212028388_DividedCinemaProductsEntity.resx">
-      <DependentUpon>201902212028388_DividedCinemaProductsEntity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902212039367_FixedNavigationsProperties.resx">
-      <DependentUpon>201902212039367_FixedNavigationsProperties.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902212130022_AddedFilmEntity.resx">
-      <DependentUpon>201902212130022_AddedFilmEntity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902212201509_AddedTVShowEntity.resx">
-      <DependentUpon>201902212201509_AddedTVShowEntity.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
