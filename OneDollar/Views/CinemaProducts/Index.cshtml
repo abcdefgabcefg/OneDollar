@@ -1,42 +1,18 @@
 ﻿@model IEnumerable<OneDollar.Models.CinemaProduct>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Gallery";
 }
 
-<h2>Index</h2>
+@Styles.Render("~/Custom/css/index")
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ImagePath)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
+@foreach(var item in Model)
+{
+    <div class="cinema-product-wrapper">
+        <a src="@Url.Action("Details", new { id = item.ID })" class="cinema-product-link">
+            <img src="@item.ImagePath" class="cinema-product-image">
+            <h2>@item.Title</h2>
+            <p>@item.Description</p>
+        </a>
+    </div>
 }
-
-</table>

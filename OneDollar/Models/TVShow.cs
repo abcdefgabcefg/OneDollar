@@ -35,7 +35,6 @@ namespace OneDollar.Models
             }
         }
         [MaxLength(3000, ErrorMessage = "Max description lenght's 3000")]
-        [Required]
         public string Description { get; set; }
         [Required]
         public int Year { get; set; }

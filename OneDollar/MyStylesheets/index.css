@@ -1,0 +1,34 @@
+﻿.body-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cinema-product-wrapper {
+    width: 50%;
+    padding: 20px;
+}
+.cinema-product-link {
+    color: #9d9d9d;
+    text-decoration: none;
+    overflow: auto;
+    display: block;
+    padding: 20px;
+}
+    .cinema-product-link:hover{
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        box-shadow: 0 0 20px black;
+    }
+.cinema-product-image {
+    float: left;
+    margin-right: 20px;
+    box-shadow: 5px 5px 20px black;
+}
+.cinema-product-wrapper h2{
+    margin-top: 0;
+    font-size: 23px;
+}
+
+.cinema-product-wrapper p{
+    font-size: 15px;
+}

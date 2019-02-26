@@ -10,10 +10,17 @@ namespace OneDollar.DAL
     public class CinemaProductsContext : DbContext
     {
         public DbSet<CinemaProduct> CinemaProducts { get; set; }
-        public DbSet<MainRole> MainRoles { get; set; }
-        public DbSet<Producer> Producers { get; set; }
+
+        public DbSet<Actor> Actors { get; set; }
+        public DbSet<Director> Directors { get; set; }
+
         public DbSet<Season> Seasons { get; set; }
         public DbSet<Series> Serieses { get; set; }
+
+        public CinemaProductsContext()
+        {
+            Database.SetInitializer(new CinemaProductsContextInitializer());
+        }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -36,7 +43,7 @@ namespace OneDollar.DAL
                     p.IMDB,
                     p.ImagePath,
                     p.Countries,
-                    p.Genries
+                    p.Genres
                 });
                 map.ToTable("CinemaProductsInfo");
             });
